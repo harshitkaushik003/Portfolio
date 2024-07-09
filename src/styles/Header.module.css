@@ -1,5 +1,17 @@
 #header {
-  background-image: url("../assets/header.jpg");
+  background-image: url("../assets/header2.jpg");
   background-position: center;
   background-size: cover;
-}/*# sourceMappingURL=Header.module.css.map */
+}
+
+#details h1{
+  font-size: 100px;
+  font-weight: 600;
+  color: white;
+
+
+}
+
+#details h1:nth-child(2){
+  color: white;
+}
