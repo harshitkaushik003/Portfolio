@@ -1,6 +1,7 @@
 import React from 'react'
-import { aboutMe } from '../utils/data'
+import { aboutMe, skills } from '../utils/data'
 import education from "../assets/education.gif"
+import SkillBar from './SkillBar'
 
 function Details() {
   return (
@@ -25,7 +26,11 @@ function Details() {
           </ul>
         </div>
       </div>
-      <div id="right" className='w-1/2 h-full bg-yellow-500'></div>
+      <div id="right" className='w-1/2 h-full bg-yellow-500 flex items-center flex-wrap'>
+        {skills.map((item)=>(
+          <SkillBar backgroundColor="blue" name={item.name} percentage={item.percentage}/>
+        ))}
+      </div> 
     </div>
   )
 }
