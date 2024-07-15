@@ -1,36 +1,28 @@
-import React from 'react'
-import { aboutMe, skills } from '../utils/data'
-import education from "../assets/education.gif"
-import SkillBar from './SkillBar'
+import styles from "../styles/Details.module.css"
+import codeImg from "../assets/About.ts.png"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
 
 function Details() {
+  useGSAP(()=>{
+    gsap.from("#about", {
+      scale: 0,
+      scrollTrigger:{
+        trigger: "#details",
+        scroller: "body",
+        start: "top 60%",
+        end: "top 5%",
+        scrub: 3,
+      }
+    })
+  })
   return (
-    <div id='details' className='w-full h-full bg-black absolute -bottom-full flex'>
-      <div id="left" className='w-1/2 h-full bg-blue-500 flex flex-col justify-center gap-8'>
-        <div id="about" className='w-full h-1/2 pl-10 pr-10'>
-          <p className='lxgw-wenkai-tc-bold text-white text-lg leading-relaxed text-justify'>
-            {aboutMe}
-          </p>
-        </div>
-        <div id="info" className='pl-10 pr-10'>
-          <ul>
-            <li className='flex gap-8 items-center'>
-              <img src={education} alt="" className='w-12 h-12 inline-block'/>
-              <span className='lxgw-wenkai-tc-bold text-white text-lg leading-relaxed text-justify'>Guru Gobind Singh Indraprastha University<br/>B.Tech CSE</span>
-              <span className='lxgw-wenkai-tc-bold text-white text-sm leading-relaxed text-justify'>2021-2025</span>
-            </li>
-            <li className='flex gap-8 items-center'>
-              <img src="https://cdn-icons-png.flaticon.com/128/484/484167.png" alt="" className='w-12 h-12'/>
-              <span className='lxgw-wenkai-tc-bold text-white text-lg leading-relaxed text-justify'>New Delhi, India</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="right" className='w-1/2 h-full bg-yellow-500 flex items-center flex-wrap'>
-        {skills.map((item)=>(
-          <SkillBar backgroundColor="blue" name={item.name} percentage={item.percentage}/>
-        ))}
-      </div> 
+    <div id='details' className={`${styles.details} w-full h-full absolute -bottom-full flex`}>
+      <img id="about" src={codeImg} alt="" className="scale-90"/>
+      <button id="button" className="fira-code-regular w-60 h-16 bg-orange-500 rounded-full text-white cursor-pointer absolute top-1/2 right-96 shadow-md shadow-neutral-300 transform transition-transform duration-300 hover:scale-110 ease-in-out">View Resume</button>
     </div>
   )
 }
