@@ -3,7 +3,7 @@ import styles from "../styles/Header.module.css"
 import cloud from "../assets/clouds2.png"
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { drag, fly, headerAnimation, rise } from '../utils/gsapFn'
+import { drag, rise } from '../utils/gsapFn'
 import plane from "../assets/paper-plane.png"
 import Details from './Details'
 

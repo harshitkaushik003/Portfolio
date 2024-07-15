@@ -66,7 +66,7 @@ export function fly(query_for_gsap: string, scroll_query: string){
     })
 }
 
-export function drag(query_for_gsap: string, scroll_query: string){
+export function drag(query_for_gsap: string, scroll_query: string) : void{
     gsap.to(query_for_gsap, {
         top: 0,
         scrollTrigger: {

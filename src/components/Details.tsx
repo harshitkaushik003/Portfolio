@@ -21,8 +21,13 @@ function Details() {
   })
   return (
     <div id='details' className={`${styles.details} w-full h-full absolute -bottom-full flex`}>
-      <img id="about" src={codeImg} alt="" className="scale-90"/>
-      <button id="button" className="fira-code-regular w-60 h-16 bg-orange-500 rounded-full text-white cursor-pointer absolute top-1/2 right-96 shadow-md shadow-neutral-300 transform transition-transform duration-300 hover:scale-110 ease-in-out">View Resume</button>
+      <img id="about" src={codeImg} alt="" className="scale-90 "/>
+      <a href={"https://drive.google.com/file/d/1YaUWbjf3JD7Ire3xP6DqUOy4gj6HxUaH/view?usp=sharing"} target="_blank" rel="noopener noreferrer">
+        <button id="button" className="fira-code-regular w-52 h-14 bg-orange-500 rounded-full text-white cursor-pointer absolute top-1/2 right-96 shadow-md shadow-neutral-300 transform transition-transform duration-300 hover:scale-110 ease-in-out">
+          View Resume
+        </button>
+      </a>
+      
     </div>
   )
 }
