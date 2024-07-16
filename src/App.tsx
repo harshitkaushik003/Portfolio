@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import Page from './components/Page';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 
 
@@ -10,7 +11,8 @@ function App() {
     <main className='w-screen h-screen relative'>
       <Navbar/>
       <Header/>
-      <Page/>
+      <Projects/>
+      <Experience/>
     </main>
   );
 }
