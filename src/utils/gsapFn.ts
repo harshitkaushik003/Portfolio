@@ -66,17 +66,39 @@ export function fly(query_for_gsap: string, scroll_query: string){
     })
 }
 
-export function drag(query_for_gsap: string, scroll_query: string) : void{
-    gsap.to(query_for_gsap, {
-        top: 0,
-        scrollTrigger: {
-            trigger: scroll_query, 
+export function drag(query_for_gsap: string, scroll_query: string): void {
+    ScrollTrigger.matchMedia({
+      // Desktop and larger screens
+      "(min-width: 768px)": function() {
+        gsap.to(query_for_gsap, {
+          top: 0,
+          scrollTrigger: {
+            trigger: scroll_query,
             scroller: "body",
-            // markers: true,
             start: "top 0%",
             end: "top -100%",
+            markers:true,
             scrub: 2,
             pin: true
-        }
-    })
-}
+          }
+        });
+      },
+  
+      // Mobile screens
+      "(max-width: 767px)": function() {
+        gsap.to(query_for_gsap, {
+          top: 0,
+          scrollTrigger: {
+            trigger: scroll_query,
+            scroller: "body",
+            start: "top 0%",
+            end: "top -150%", // Adjust the end value for smaller screens
+            markers: true,
+            scrub: 2,
+            pin: true,
+            pinSpacing: true // No space is left for the pinned element
+          }
+        });
+      }
+    });
+  }
