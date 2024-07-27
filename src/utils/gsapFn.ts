@@ -74,7 +74,7 @@ export function drag(query_for_gsap: string, scroll_query: string): void {
       scroller: "body",
       start: "top 0%",
       end: "top -100%",
-      markers:true,
+    //   markers:true,
       scrub: 2,
       pin: true,
     }

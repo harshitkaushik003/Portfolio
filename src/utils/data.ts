@@ -75,6 +75,6 @@ export const Skill : Skills = {
     ],
     databases: [
         {name: "SQL", image: "https://cdn.iconscout.com/icon/premium/png-512-thumb/sql-116626.png?f=webp&w=256"},
-        {name: "MongoDB", image: "https://cdn.iconscout.com/icon/free/png-512/free-mongodb-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175138.png?f=webp&w=256"},
+        {name: "MongoDB", image: "https://cdn.iconscout.com/icon/free/png-512/free-mongodb-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175140.png?f=webp&w=256"},
     ]
 }

@@ -19,7 +19,7 @@ const Projects = () => {
         scroller: "body",
         start: "top 0%",
         end: "top -500%",
-        markers: true,
+        // markers: true,
         scrub: 2,
         pin: true,
         
@@ -27,7 +27,7 @@ const Projects = () => {
     });
   });
   return (
-    <div id='projects' className='w-full h-full flex relative overflow-hidden lg:overflow-visible z-20'>
+    <div id='projects' className='w-full h-full flex relative overflow-hidden lg:overflow-visible'>
       {projects.map((item, index)=>(
         <ProjectContainer key={index} name={item.name} image={item.image} details={item.details} />
       ))}

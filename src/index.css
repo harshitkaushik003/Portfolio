@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 *{
   margin: 0;
@@ -64,7 +65,37 @@ body{
   font-style: normal;
 }
 
+.arsenal-sc-regular {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arsenal-sc-bold {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arsenal-sc-regular-italic {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arsenal-sc-bold-italic {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 .exp{
   /* background: linear-gradient(45deg, #32CBFF, #00A5E0, #89A1EF, #EF9CDA); */
-  background: linear-gradient(135deg, #70D6FF, #00A5E0, #FF70A6);
+  /* background: linear-gradient(135deg,#00072D,#001C55,#0A2472, #0E6BA8); */
+  background: linear-gradient(135deg, #6610F2, #1A8FE3);
+  background: url("./assets/japan-background-digital-art.jpg");
+  background-size: cover;
 }
+
+/*<a href="https://www.freepik.com/free-ai-image/japan-background-digital-art_206481874.htm#query=8k%20wallpaper%20anime&position=3&from_view=keyword&track=ais_user&uuid=67cf191a-6b6b-4d59-9aaa-fa266300d7aa">Image by freepik</a>*/
