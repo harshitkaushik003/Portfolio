@@ -8,7 +8,7 @@ import Projects from './Components/Projects';
 
 function App() {
   return (
-    <main className='w-screen h-screen relative overflow-x-hidden lg:overflow-x-visible'>
+    <main className='w-screen h-screen relative overflow-x-visible'>
       <Navbar/>
       <Header/>
       <Projects/>

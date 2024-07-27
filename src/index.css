@@ -18,9 +18,10 @@
   display: none;
 }
 
-body{
+body{ 
   overflow-x: hidden;
 }
+
 
 .league-spartan-one {
   font-family: "League Spartan", sans-serif;

@@ -12,8 +12,8 @@ const Projects = () => {
   useGSAP(() => {
     // Desktop animation
     gsap.to("#projects", {
+      overflow: "visible",
       translateX: `-${scrollLen}%`,
-      delay: 1,
       scrollTrigger: {
         trigger: "#projects",
         scroller: "body",
@@ -25,28 +25,9 @@ const Projects = () => {
         
       }
     });
-  
-    // Mobile animation
-    const mobileQuery = window.matchMedia("(max-width: 768px)");
-    if (mobileQuery.matches) {
-      gsap.to("#projects", {
-        translateX: `-${scrollLen}%`,
-        delay: 1,
-        scrollTrigger: {
-          trigger: "#projects",
-          scroller: "body",
-          start: "top 0%",
-          end: "top -500%", // Adjusted end value for mobile screens
-          markers: true,
-          scrub: 2,
-          pin: true,
-          pinSpacing: false
-        }
-      });
-    }
   });
   return (
-    <div id='projects' className='w-full h-full flex sm:relative'>
+    <div id='projects' className='w-full h-full flex relative overflow-hidden lg:overflow-visible z-20'>
       {projects.map((item, index)=>(
         <ProjectContainer key={index} name={item.name} image={item.image} details={item.details} />
       ))}

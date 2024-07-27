@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <section id={styles.header} className="header w-full h-full relative">
       <img id='cloud1' src={cloud} alt="" className='cloud w-52 h-52 absolute top-40 -left-52 opacity-50' />
-      <div id={styles.details} className='text-div poppins-medium absolute w-full h-full flex flex-col justify-center items-start pl-14 pt-16 lg:text-9xl text-white text-6xl'>
+      <div id={styles.details} className='text-div poppins-medium absolute w-full h-full flex flex-col justify-center items-start lg:pl-14 pl-10 pt-16 lg:text-9xl text-white text-6xl'>
         <h1 className=''>Hi, my</h1>
         <h1>name is Harshit.</h1>
       </div>
