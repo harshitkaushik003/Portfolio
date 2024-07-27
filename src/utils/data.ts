@@ -5,6 +5,8 @@ import task from "../assets/task.png"
 import jobs from "../assets/jobs.png"
 import shop from "../assets/shop.png"
 import photo from "../assets/photo.png"
+
+import next from "../assets/next-js.256x256.png"
 export type project = {
     name: string,
     image: string,
@@ -43,3 +45,36 @@ export const projects:project[] = [
         details: "Photofolio is a sleek photo album app that organizes and showcases your memories beautifully. It features customizable albums, easy photo uploads, and sharing options, perfect for preserving and sharing your favorite moments. With Photofolio, reliving and sharing your cherished memories is simple and elegant."
     }
 ]
+
+export type Tech = {
+    name: string
+    image: string
+}
+
+export type Skills = {
+    languages: Tech[],
+    technologies: Tech[],
+    databases: Tech[]
+}
+
+export const Skill : Skills = {
+    languages: [
+        {name: "JavaScript", image: "https://cdn-icons-png.flaticon.com/128/5968/5968292.png"},
+        {name: "TypeScript", image: "https://cdn-icons-png.flaticon.com/128/5968/5968381.png"},
+        {name: "Python", image: "https://cdn-icons-png.flaticon.com/128/5968/5968350.png"},
+        {name: "C++", image: "https://cdn-icons-png.flaticon.com/128/6132/6132222.png"},
+        {name: "Java", image: "https://cdn.iconscout.com/icon/free/png-512/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png?f=webp&w=256"}
+    ],
+    technologies: [
+        {name: "Nodejs", image: "https://cdn.iconscout.com/icon/free/png-512/free-nodejs-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226035.png?f=webp&w=256"},
+        {name: "Expressjs", image: "https://cdn.iconscout.com/icon/free/png-512/free-express-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175170.png?f=webp&w=256"},
+        {name: "Reactjs", image: "https://cdn.iconscout.com/icon/premium/png-512-thumb/reactjs-9100811-7403171.png?f=webp&w=256"},
+        {name: "Redux", image: "https://cdn.iconscout.com/icon/free/png-512/free-redux-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-10-pack-icons-283024.png?f=webp&w=256"},
+        {name: "Flask", image: "https://cdn.iconscout.com/icon/free/png-512/free-flask-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-15-pack-icons-285137.png?f=webp&w=256"},
+        {name: "Nextjs", image: `${next}`}
+    ],
+    databases: [
+        {name: "SQL", image: "https://cdn.iconscout.com/icon/premium/png-512-thumb/sql-116626.png?f=webp&w=256"},
+        {name: "MongoDB", image: "https://cdn.iconscout.com/icon/free/png-512/free-mongodb-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175138.png?f=webp&w=256"},
+    ]
+}
