@@ -6,7 +6,13 @@ import jobs from "../assets/jobs.png"
 import shop from "../assets/shop.png"
 import photo from "../assets/photo.png"
 
-import next from "../assets/next-js.256x256.png"
+import next from "../assets/next.jpeg"
+import node from "../assets/node.jpeg"
+import express from "../assets/express.png"
+import redux from "../assets/redux.jpeg"
+import react from "../assets/react.jpeg"
+import flask from "../assets/flask.png"
+
 export type project = {
     name: string,
     image: string,
@@ -66,11 +72,11 @@ export const Skill : Skills = {
         {name: "Java", image: "https://cdn.iconscout.com/icon/free/png-512/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png?f=webp&w=256"}
     ],
     technologies: [
-        {name: "Nodejs", image: "https://cdn.iconscout.com/icon/free/png-512/free-nodejs-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226035.png?f=webp&w=256"},
-        {name: "Expressjs", image: "https://cdn.iconscout.com/icon/free/png-512/free-express-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175170.png?f=webp&w=256"},
-        {name: "Reactjs", image: "https://cdn.iconscout.com/icon/premium/png-512-thumb/reactjs-9100811-7403171.png?f=webp&w=256"},
-        {name: "Redux", image: "https://cdn.iconscout.com/icon/free/png-512/free-redux-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-10-pack-icons-283024.png?f=webp&w=256"},
-        {name: "Flask", image: "https://cdn.iconscout.com/icon/free/png-512/free-flask-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-15-pack-icons-285137.png?f=webp&w=256"},
+        {name: "Nodejs", image: `${node}`},
+        {name: "Expressjs", image: `${express}`},
+        {name: "Reactjs", image: `${react}`},
+        {name: "Redux", image: `${redux}`},
+        {name: "Flask", image: `${flask}`},
         {name: "Nextjs", image: `${next}`}
     ],
     databases: [

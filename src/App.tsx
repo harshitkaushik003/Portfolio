@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import Experience from './Components/Experience';
 import Projects from './Components/Projects';
+import { Contact } from './Components/Contact';
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <Projects/>
       <Experience/>
+      <Contact/>
     </main>
   );
 }

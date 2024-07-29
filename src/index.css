@@ -91,10 +91,7 @@ body{
 
 
 .exp{
-  /* background: linear-gradient(45deg, #32CBFF, #00A5E0, #89A1EF, #EF9CDA); */
-  /* background: linear-gradient(135deg,#00072D,#001C55,#0A2472, #0E6BA8); */
-  background: linear-gradient(135deg, #6610F2, #1A8FE3);
-  background: url("./assets/japan-background-digital-art.jpg");
+  background: url("./assets/tech.jpg");
   background-size: cover;
 }
 

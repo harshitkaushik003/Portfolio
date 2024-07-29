@@ -24,7 +24,7 @@ const Experience = () => {
   const {languages, technologies, databases} = Skill;
   return (
     <div id="experience" className='exp w-full h-full overflow-hidden'>
-      <div className='w-full h-full lg:backdrop-blur-md backdrop-blur-lg bg-white lg:bg-opacity-20 bg-opacity-50 pt-10'>
+      <div className='container w-full h-full bg-blue-600 lg:bg-opacity-30 bg-opacity-50 pt-10 pb-40'>
       <div id="top" className='arsenal-sc-regular w-full h-1/5 flex justify-start items-center lg:text-5xl text-xl text-white pl-10'>
         Things I have worked on
       </div>
@@ -32,11 +32,11 @@ const Experience = () => {
         <div id="lang" className='flex lg:justify-between lg:flex-row flex-col lg:mt-12 pr-12 pl-12 w-full h-1/3 lg:gap-10'>
           <div className="name arsenal-sc-regular flex justify-start items-center lg:text-3xl text-md text-white w-1/5">Languages</div>
           <List arr={languages}/>
-        </div><hr />
+        </div>
         <div id="tech" className='flex lg:flex-row flex-col justify-between lg:mt-12 pr-12 pl-12 w-full h-1/3 '>
           <div className="name arsenal-sc-regular flex justify-start items-center lg:text-3xl mt-10 text-white w-1/5">Technologies</div>
           <List arr={technologies}/>
-        </div><hr />
+        </div>
         <div id="db" className='flex lg:flex-row flex-col justify-between lg:mt-12 pr-12 pl-12 w-full h-1/3 '>
           <div className="name arsenal-sc-regular flex justify-start items-center lg:text-3xl mt-10 text-white w-1/5">Databases</div>
           <List arr={databases}/>
