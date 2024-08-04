@@ -84,3 +84,31 @@ export const Skill : Skills = {
         {name: "MongoDB", image: "https://cdn.iconscout.com/icon/free/png-512/free-mongodb-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175140.png?f=webp&w=256"},
     ]
 }
+
+
+// <div
+//                 id="icons"
+//                 className="w-1/2 h-full flex justify-start items-center pl-4 gap-4 lg:pl-10 lg:gap-10"
+//               >
+//                 <a
+//                   href="https://www.instagram.com/kaushikharshit5/?igshid=ZDdkNTZiNTM%3D"
+//                   target="_blank"
+//                   rel="noreferrer"
+//                 >
+//                   <FaInstagram style={iconStyle} />
+//                 </a>
+//                 <a
+//                   href="https://www.linkedin.com/in/harshit-kaushik-077716236/"
+//                   target="_blank"
+//                   rel="noreferrer"
+//                 >
+//                   <FaLinkedin style={iconStyle} />
+//                 </a>
+//                 <a
+//                   href="https://github.com/harshitkaushik003"
+//                   target="_blank"
+//                   rel="noreferrer"
+//                 >
+//                   <FaGithub style={iconStyle} />
+//                 </a>
+//               </div>
