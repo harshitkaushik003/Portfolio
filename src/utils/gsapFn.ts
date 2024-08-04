@@ -79,4 +79,18 @@ export function drag(query_for_gsap: string, scroll_query: string): void {
       pin: true,
     }
   });
-  }
+}
+
+export function drag_up(query_for_gsap: string, scroll_query: string): void{
+    gsap.to(query_for_gsap, {
+        top: "-100%",
+        scrollTrigger: {
+            trigger: scroll_query,
+            scroller: "body",
+            start: "top 0%",
+            end: "top -100%",
+            scrub: 2,
+            pin: true
+        }
+    })
+}

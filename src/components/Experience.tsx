@@ -23,7 +23,7 @@ const Experience = () => {
   })
   const {languages, technologies, databases} = Skill;
   return (
-    <div id="experience" className='exp w-full h-full overflow-hidden'>
+    <div id="experience" className='exp w-full h-full overflow-hidden absolute top-0 left-0'>
       <div className='container w-full h-full bg-blue-600 lg:bg-opacity-30 bg-opacity-50 pt-10 pb-40'>
       <div id="top" className='arsenal-sc-regular w-full h-1/5 flex justify-start items-center lg:text-5xl text-xl text-white pl-10'>
         Things I have worked on

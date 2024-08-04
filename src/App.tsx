@@ -1,9 +1,8 @@
 import React from 'react';
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
-import Experience from './Components/Experience';
 import Projects from './Components/Projects';
-import { Contact } from './Components/Contact';
+import { Bottom } from './Components/Bottom';
 
 
 
@@ -13,8 +12,7 @@ function App() {
       <Navbar/>
       <Header/>
       <Projects/>
-      <Experience/>
-      <Contact/>
+      <Bottom/>
     </main>
   );
 }
