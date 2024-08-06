@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className='w-full h-24 flex justify-end lg:pr-24 pr-10 fixed z-20'>
         <div id='navRight' className='w-1/2 h-full flex justify-end items-center gap-10 text-white lg:overflow-hidden overflow-visible'>
-            <span ref={navRef} className='league-spartan-one text-lg cursor-pointer'>about</span>
+            <a href="#details"><span ref={navRef} className='league-spartan-one text-lg cursor-pointer'>about</span></a>
             <span ref={navRef} className='league-spartan-one text-lg cursor-pointer'>projects</span>
             <span ref={navRef} className='league-spartan-one text-lg cursor-pointer'>contact</span>
         </div>

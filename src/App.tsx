@@ -9,7 +9,6 @@ import { Bottom } from './Components/Bottom';
 function App() {
   return (
     <main className='w-screen h-screen relative overflow-x-visible'>
-      <Navbar/>
       <Header/>
       <Projects/>
       <Bottom/>
