@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import Projects from './Components/Projects';
 import { Bottom } from './Components/Bottom';
